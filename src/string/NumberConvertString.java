@@ -1,6 +1,8 @@
 package string;
 
 
+import java.util.Scanner;
+
 public class NumberConvertString {
     /**
      * 代码中的类名、方法名、参数名已经指定，请勿修改，直接返回方法规定的值即可
@@ -38,5 +40,11 @@ public class NumberConvertString {
 		char A = 'A';
 		int result = A;
 		System.out.println(result);
+
+		Scanner scanner = new Scanner(System.in);
+		while (scanner.hasNextLine()) {
+			int intValue = scanner.nextInt();
+			System.out.println(new NumberConvertString().numToString(intValue));
+		}
 	}
 }
